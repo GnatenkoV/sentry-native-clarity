@@ -14,8 +14,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
       with:
-        fetch-depth: 3
+        fetch-depth: 0
         submodules : true
+    
+    - name: Checkout submodules
+      run: git submodule update --init --recursive
 
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v1.1
@@ -27,10 +30,6 @@ jobs:
       
     - name: Generate ARTIFACT_VERSION
       run: echo ARTIFACT_VERSION=$((Get-Date).tostring("yyyy.MMdd.HHmm")) >> $env:GITHUB_ENV
-      
-    - name: Where
-      working-directory: ./sentry-native
-      run: where /r D:/a/sentry-native-clarity/sentry-native-clarity/sentry-native CMakeLists.txt
       
     - name: Configure cmake
       working-directory: ./sentry-native
