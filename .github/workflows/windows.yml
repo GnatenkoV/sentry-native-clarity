@@ -28,20 +28,17 @@ jobs:
     - name: Generate ARTIFACT_VERSION
       run: echo ARTIFACT_VERSION=$((Get-Date).tostring("yyyy.MMdd.HHmm")) >> $env:GITHUB_ENV
       
-    - name: CD Sentry
-      run: cd sentry-native
-      
     - name: Configure cmake
+      working-directory: ./sentry-native
       run: cmake -B build 
       
     - name: Build 
+      working-directory: ./sentry-native
       run: cmake --build build --config RelWithDebInfo
       
     - name: Install
+      working-directory: ./sentry-native
       run: cmake --install build --prefix install --config RelWithDebInfo
-      
-    - name: CD back
-      run: cd ..
 
     - name: Pack NuGet (Package)
       run: nuget pack sentry-clarity.nuspec -p version=$env:ARTIFACT_VERSION
