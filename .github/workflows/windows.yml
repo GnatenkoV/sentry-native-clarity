@@ -30,7 +30,7 @@ jobs:
       
     - name: Where
       working-directory: ./sentry-native
-      run: where /r . CMakeLists.txt
+      run: where /r D:/a/sentry-native-clarity/sentry-native-clarity/sentry-native CMakeLists.txt
       
     - name: Configure cmake
       working-directory: ./sentry-native
