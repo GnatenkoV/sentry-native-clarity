@@ -6,7 +6,7 @@
         <version>6.6.0</version>
         <authors>The OpenSSL Project</authors>
         <owners>GnatenkoV</owners>
-        <license type="expression">MIT license</license>
+        <license type="expression">MIT</license>
         <projectUrl>https://github.com/gnatenkov/sentry-native-clarity</projectUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
         <summary>Sentry-native. Compiler: VS 2019</summary>
