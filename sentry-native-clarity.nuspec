@@ -4,7 +4,7 @@
         <id>sentry-native</id>
         <title>sentry-native</title>
         <version>6.6.0</version>
-        <authors>The OpenSSL Project</authors>
+        <authors>The Sentry</authors>
         <owners>GnatenkoV</owners>
         <license type="expression">MIT</license>
         <projectUrl>https://github.com/gnatenkov/sentry-native-clarity</projectUrl>
