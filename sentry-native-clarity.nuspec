@@ -3,7 +3,7 @@
     <metadata minClientVersion="2.5">
         <id>sentry-native</id>
         <title>sentry-native</title>
-        <version>0.1.0</version>
+        <version>0.6.0</version>
         <authors>The Sentry</authors>
         <owners>GnatenkoV</owners>
         <license type="expression">MIT</license>
@@ -11,7 +11,7 @@
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
         <summary>Sentry-native. Compiler: VS 2019</summary>
         <description>Sentry-native library, packaged for Visual Studio 2019 (vc142). Compiler: Visual Studio 2019</description>
-        <releaseNotes>Sentry-native 0.1.0 https://github.com/getsentry/sentry-native</releaseNotes>
+        <releaseNotes>Sentry-native 0.6.0 https://github.com/getsentry/sentry-native</releaseNotes>
         <copyright>Copyright 2023</copyright>
         <tags>native,sentry-native,sentry.io,C++,crash-reporting,breakpad,crashpad</tags>
 		<dependencies>
@@ -19,13 +19,13 @@
 		</dependencies>
     </metadata>
     <files>
-        <file src="sentry-native\install\include\sentry.h"          target="build\native\include\sentry.h" />
-		<file src="sentry-native\install\bin\sentry.pdb"            target="build\native\bin\sentry.pdb" />
+        <file src="sentry-native\install\include\sentry.h"          target="lib\native\include\sentry.h" />
+		<file src="sentry-native\install\bin\sentry.pdb"            target="lib\native\bin\sentry.pdb" />
 
-        <file src="sentry-native\install\bin\crashpad_handler.exe"  target="build\native\bin\crashpad_handler.exe" />
-        <file src="sentry-native\install\bin\crashpad_wer.dll"      target="build\native\bin\crashpad_wer.dll" />
-        <file src="sentry-native\install\bin\sentry.dll"            target="build\native\bin\sentry.dll" />
-        <file src="sentry-native\install\lib\sentry.lib"            target="build\native\bin\sentry.lib" />
+        <file src="sentry-native\install\bin\crashpad_handler.exe"  target="lib\native\bin\crashpad_handler.exe" />
+        <file src="sentry-native\install\bin\crashpad_wer.dll"      target="lib\native\bin\crashpad_wer.dll" />
+        <file src="sentry-native\install\bin\sentry.dll"            target="lib\native\bin\sentry.dll" />
+        <file src="sentry-native\install\lib\sentry.lib"            target="lib\native\bin\sentry.lib" />
 		<file src="sentry-native-clarity.props"                     target="build\native\sentry-native-clarity.props" />
     </files>
 </package>

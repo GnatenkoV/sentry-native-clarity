@@ -5,7 +5,7 @@
       <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../../lib/native/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>$(MSBuildThisFileDirectory)../../lib/native/$(Platform)-$(Configuration)/AEC3.lib;$(MSBuildThisFileDirectory)../../lib/native/$(Platform)-$(Configuration)/base.lib;$(MSBuildThisFileDirectory)../../lib/native/$(Platform)-$(Configuration)/api.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(MSBuildThisFileDirectory)../../lib/native/bin/sentry.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
 </Project>
